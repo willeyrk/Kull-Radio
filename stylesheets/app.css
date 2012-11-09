@@ -1,0 +1,92 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+	background: #D2D5CE;
+	color: #111216;
+	font-family: 'Marcellus SC', serif;
+}
+#container {	
+	padding: 3%;
+	margin-top: 0%;
+}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+.pitch {
+	background: #FFFFFF;
+	padding: 3%;
+	display:block;
+	width: 100%;
+	height: 600px;
+	position:absolute;
+	top: 0px;
+	right: 0px;
+}
+.pitch .row {
+	position:absolute;
+	top: 25%;
+	left: 10%;
+}
+.title h1 {
+	font-size: 50px;
+	font-family: 'Trade Winds', cursive;
+}
+.title h3 {
+	font-family: 'Marcellus SC', serif;
+	color: #26272E;
+}
+.radio {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 40%;
+	height: 100%;
+	background: #CD2626;
+/*	display: none;	 */
+}
+.radio table {
+	width: 420px;
+}
+.radio #jp_container_1 {
+	position: absolute;
+	right: 10%;
+}
+.radio .recent {
+	position: absolute;
+	right: 10%;
+	top: 30%;
+}
+.artist {
+	background: #323A45;
+	padding: 3%;
+	display:block;
+	width: 100%;
+	height: 600px;
+	position:absolute;
+	top: 600px;
+	right: 0px;
+
+}
+.artist .row{
+	background: #3E495D;
+	width: 100px;
+	padding: 3%;	
+}
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

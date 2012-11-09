@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>KULL Radio - Original Music from South Louisiana</title>
+ 
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+
+<script src="javascripts/modernizr.foundation.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function (event) {
+			$(this).jPlayer("setMedia", {
+				mp3:"http://kull.louisiana.edu:8100/"//,
+				//oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+			});
+		},
+		swfPath: "js",
+		supplied: "mp3",
+		wmode: "window"
+	});
+});
+//]]>
+</script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+<div id="container">
+     <div class="pitch">
+     <div class="row">
+    	<div class="title"> 
+	  <h1>Ragin Radio</h1>
+	  <h3>Original Music from South Louisiana</h3>
+        </div>
+	Listen to our stream by clicking on the "Listen" tab at 
+	<a href="http://kull.louisiana.edu:8100">kull.louisiana.edu:8100</a>
+</br> 
+     </div>
+     
+     <div class="radio">
+      Currently Playing:
+      <div id="currentsong"></div>
+      </br></br>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	     
+<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-single">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-time-holder">
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>	
+					</div>
+				</div>
+			</div>
+	         </div>
+
+    	  <table class="recent">
+    		<tr><th>Recently Played Songs</th></tr>
+    		<tr><td><span id="prevsong1"></span></td></tr>
+    		<tr><td><span id="prevsong2"></span></td></tr>
+    		<tr><td><span id="prevsong3"></span></td></tr>
+    		<tr><td><span id="prevsong4"></span></td></tr>
+    		<tr><td><span id="prevsong5"></span></td></tr>
+    		<tr><td><span id="prevsong6"></span></td></tr>
+    		<tr><td><span id="prevsong7"></span></td></tr>
+    		<tr><td><span id="prevsong8"></span></td></tr>
+    		<tr><td><span id="prevsong9"></span></td></tr>
+    		<tr><td><span id="prevsong10"></span></td></tr>
+    	</table> 
+ <!--
+</br>
+      <div class="row">
+	      Email feedack to <a href="mailto:raginradio@gmail.com">raginradio@gmail.com</a>
+      </div>
+<br>
+<br>
+      <div class="row">
+	<h3>October 2012 artists</h3>
+	<ul>
+	  <li>Foxfire (submitted by David Lancon): Riverbeds</li>
+	  <li>Alex Voorhiies: Feeling So Hard, What's Going On?, Lookin' Fresh
+</br>
+	  </li>
+	  <li>Robert Willey: Speed Limit Years, That's How It Goes, You Can
+	  Only Be Cosmic
+</br>
+	  </li>
+	</ul>
+      </div>
+</br>
+</br>
+       <div class="row">
+	       Consider 
+	       <a href="https://docs.google.com/spreadsheet/viewform?pli=1&amp;formkey=dDIxQXJiWVhoRUxERlV5OHBUbFNQa0E6MQ#gid=0">
+		       submitting your radio-ready, unpublished original
+	       </a>
+</br>
+</br>
+		Fill out <a href="https://docs.google.com/spreadsheet/viewform?pli=1&amp;formkey=dG9fNXJqb1RaUi1yNzl4emU0ZUx6TFE6MQ#gid=0">
+		the information form</a> 
+		if you'd like to participate in the running of the
+station, .
+</br>
+</br>
+		A service of the University of Louisiana at Lafayette
+</br>
+</div> -->
+</div>
+</div>
+	<div class="artist">
+	  <div class="row">
+		<h3>October 2012 artists</h3>
+		<ul>
+		  <li>Foxfire (submitted by David Lancon): Riverbeds</li>
+		  <li>Alex Voorhiies: Feeling So Hard, What's Going On?, Lookin' Fresh<br>
+		  </li>
+		  <li>Robert Willey: Speed Limit Years, That's How It Goes, You Can
+Only Be Cosmic<br>
+		  </li>
+		</ul>
+	  </div>
+</div>
+</body>
+</html>
